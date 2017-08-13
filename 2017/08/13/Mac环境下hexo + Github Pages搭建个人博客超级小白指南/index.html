@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+
+
+
+
+<html class="theme-next pisces" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="Mac环境下hexo + Github Pages搭建个人博客超级小白指南系统环境配置Mac OS系统下要想使用hexo，就需要先安装Node.js和Git. 安装Node.js下载及安装教程 安装Git下载地址 安装Hexo使用Terminal安装。# 后面的内容是评论，直接复制粘贴的话请不要复制#后面的语句。 12345678$ mkdir ~/hexo # hexo可以是你想要的任意文件夹名">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Xiaolong, not Xialong">
+<meta property="og:url" content="http://yoursite.com/2017/08/13/Mac环境下hexo + Github Pages搭建个人博客超级小白指南/index.html">
+<meta property="og:site_name" content="Xiaolong, not Xialong">
+<meta property="og:description" content="Mac环境下hexo + Github Pages搭建个人博客超级小白指南系统环境配置Mac OS系统下要想使用hexo，就需要先安装Node.js和Git. 安装Node.js下载及安装教程 安装Git下载地址 安装Hexo使用Terminal安装。# 后面的内容是评论，直接复制粘贴的话请不要复制#后面的语句。 12345678$ mkdir ~/hexo # hexo可以是你想要的任意文件夹名">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2017-08-13T06:17:26.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Xiaolong, not Xialong">
+<meta name="twitter:description" content="Mac环境下hexo + Github Pages搭建个人博客超级小白指南系统环境配置Mac OS系统下要想使用hexo，就需要先安装Node.js和Git. 安装Node.js下载及安装教程 安装Git下载地址 安装Hexo使用Terminal安装。# 后面的内容是评论，直接复制粘贴的话请不要复制#后面的语句。 12345678$ mkdir ~/hexo # hexo可以是你想要的任意文件夹名">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"always","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: false,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+
+
+
+
+  <title> | Xiaolong, not Xialong</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Xiaolong, not Xialong</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/13/Mac环境下hexo + Github Pages搭建个人博客超级小白指南/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xiaolong">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xiaolong, not Xialong">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline"></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-08-13T13:46:10+08:00">
+                2017-08-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="Mac环境下hexo-Github-Pages搭建个人博客超级小白指南"><a href="#Mac环境下hexo-Github-Pages搭建个人博客超级小白指南" class="headerlink" title="Mac环境下hexo + Github Pages搭建个人博客超级小白指南"></a>Mac环境下hexo + Github Pages搭建个人博客超级小白指南</h1><h3 id="系统环境配置"><a href="#系统环境配置" class="headerlink" title="系统环境配置"></a>系统环境配置</h3><p>Mac OS系统下要想使用hexo，就需要先安装Node.js和Git.</p>
+<h4 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h4><p><a href="http://www.runoob.com/nodejs/nodejs-install-setup.html" target="_blank" rel="external">下载及安装教程</a></p>
+<h4 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h4><p><a href="https://git-scm.com/download/" target="_blank" rel="external">下载地址</a></p>
+<h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><p>使用Terminal安装。<strong># 后面的内容是评论，直接复制粘贴的话请不要复制#后面的语句。</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$ mkdir ~/hexo # hexo可以是你想要的任意文件夹名</div><div class="line">$ cd ~/hexo # 进入到hexo这个文件夹</div><div class="line">$ npm install hexo-cli -g # 安装hexo</div><div class="line">$ hexo init blog # 用hexo建一个叫blog的文件夹，当然还是可以叫其他你想要的名字</div><div class="line">$ cd blog</div><div class="line">$ npm install</div><div class="line">$ hexo g # 或者hexo generate，这个用于生成静态网页 </div><div class="line">$ hexo s # 或者hexo server，可以在http://localhost:4000/ 本地查看</div></pre></td></tr></table></figure>
+<p><strong>Hexo常用命令：</strong></p>
+<ol>
+<li>hexo generate (hexo g)：生成静态网页，会在当前目录中生成一个叫做public的文件夹，而这个文件夹里就包含了所有静态网页的资源。</li>
+<li>hexo server (hexo s)：启动本地web服务，可以用于预览静态网页。</li>
+<li>hexo  deploy (hexo d)：部署网页到远端（本文部署到Github pages）。</li>
+<li>hexo d -g：生成静态网页后部署，属于组合命令。</li>
+</ol>
+<h3 id="Hexo主题配置"><a href="#Hexo主题配置" class="headerlink" title="Hexo主题配置"></a>Hexo主题配置</h3><p>这里以主题<a href="http://theme-next.iissnan.com" target="_blank" rel="external">Next</a>为例。</p>
+<h4 id="安装主题"><a href="#安装主题" class="headerlink" title="安装主题"></a>安装主题</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd your-hexo-site # 在本文就是指hexo文件夹</div><div class="line">$ git clone https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure>
+<h4 id="启用主题"><a href="#启用主题" class="headerlink" title="启用主题"></a>启用主题</h4><p>到hexo文件夹目录下，打开_config.yml配置文件，在里面找到theme这个关键字，在里面将theme设置为next.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># Extensions</div><div class="line">## Plugins: https://hexo.io/plugins/</div><div class="line">## Themes: https://hexo.io/themes/</div><div class="line">theme: next # 只要填上next就可以了</div></pre></td></tr></table></figure>
+<h4 id="更新主题"><a href="#更新主题" class="headerlink" title="更新主题"></a>更新主题</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ cd themes/next # 这个要求你之前已经进入了blog这个文件夹，如果在Terminal中还没有进入的话，请先cd hexo/blog进入blog文件夹。</div><div class="line">$ git pull</div><div class="line">$ hexo g # 生成</div><div class="line">$ hexo s # 启动本地web服务器</div></pre></td></tr></table></figure>
+<p>现在打开<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> ，会看到我们已经应用了一个新的主题。</p>
+<h3 id="Github-Pages配置"><a href="#Github-Pages配置" class="headerlink" title="Github Pages配置"></a>Github Pages配置</h3><h4 id="什么是Github-Pages"><a href="#什么是Github-Pages" class="headerlink" title="什么是Github Pages"></a>什么是Github Pages</h4><p><a href="https://pages.github.com" target="_blank" rel="external">Github Pages</a>本意是用于介绍托管在Github上的项目，不过Github也鼓励使用者用于各种用途，原话就是Whatever you want. 因为其空间免费且稳定，用来放置静态网页的博客是再合适不过了。</p>
+<h4 id="创建Github-Pages"><a href="#创建Github-Pages" class="headerlink" title="创建Github Pages"></a>创建Github Pages</h4><p>这里引用一篇别人写的文章，非常详细的介绍了怎么创建自己的Github Pages。不打算购置域名的朋友可以跳过前面的购置域名段落，直接从<strong>注册GitHub</strong>开始。</p>
+<p><a href="http://www.jianshu.com/p/05289a4bc8b2" target="_blank" rel="external">如何搭建一个独立博客——简明Github Pages与Hexo教程</a></p>
+<p>值得注意的是，这篇教程中寻找SSH Key的部分是在windows中寻找的。对于Mac OS系统而言，SSH Key会存放在.ssh文件夹中，而这个文件夹是隐藏的。大家可以通过以下操作步骤找到这个文件夹。</p>
+<ol>
+<li>打开Finder后点击Go, 在下拉菜单中选择Go to folder…</li>
+<li>填写~/</li>
+<li>在这个用户文件夹中查看隐藏文件：<strong>快捷键是command+shift+.</strong></li>
+<li>找到.ssh文件夹</li>
+</ol>
+<h3 id="部署Hexo到Github-Pages"><a href="#部署Hexo到Github-Pages" class="headerlink" title="部署Hexo到Github Pages"></a>部署Hexo到Github Pages</h3><p>这一步中我们要部署在本地生成的静态网页到Github Pages，让这个网页存在于网络中，并且可以通过<a href="https://your-user-name.github.io来访问。" target="_blank" rel="external">https://your-user-name.github.io来访问。</a></p>
+<h4 id="使用hexo-deploy部署"><a href="#使用hexo-deploy部署" class="headerlink" title="使用hexo deploy部署"></a>使用hexo deploy部署</h4><p>要部署到github，需要在配置文件_config.yml（该文件在hexo这个目录下）中修改配置信息。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repo: git@github.com:username/username.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+<p>然后进入到hexo文件夹安装部署必备的一个扩展：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ cd hexo/blog</div><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<p>最后进行部署：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure>
+<p>到这里就全部结束了部署，之后有任何想要发布到网页的文章，都可以用<a href="http://commonmark.org/help/" target="_blank" rel="external">markdown</a>语法编写好.md格式的文档，放到hexo/blog/sources/_post文件夹里，然后在<code>$ cd hexo/blog</code>后执行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g # 生成静态网页，也就是public文件夹里的文件更新一次</div><div class="line">hexo d # 部署到github pages</div></pre></td></tr></table></figure>
+<p>都完成后，就可以看到新写的文章在网页中显示了。</p>
+<h3 id="博客配置及主题优化"><a href="#博客配置及主题优化" class="headerlink" title="博客配置及主题优化"></a>博客配置及主题优化</h3><h4 id="博客信息配置"><a href="#博客信息配置" class="headerlink" title="博客信息配置"></a>博客信息配置</h4><p>进入到hexo/blog，打开_config.yml文件，可以在# Site之下修改你的博客名，作者名，和一个简短的描述。</p>
+<p>本文选用的是<a href="http://theme-next.iissnan.com" target="_blank" rel="external">Next</a>主题，这个主题提供了很多个性化配置的文件。可以在hexo/blog/themes文件夹里找到主题的配置文件，也叫做_config.yml。打开后可以根据<a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="external">官方文档</a>来修改相关信息。</p>
+<p>#### </p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/10/bodybuilding和教育蓝海/" rel="next" title="Bodybuilding和教育蓝海">
+                <i class="fa fa-chevron-left"></i> Bodybuilding和教育蓝海
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.jpg"
+               alt="Xiaolong" />
+          <p class="site-author-name" itemprop="name">Xiaolong</p>
+           
+              <p class="site-description motion-element" itemprop="description">A blog for solo dance.</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Mac环境下hexo-Github-Pages搭建个人博客超级小白指南"><span class="nav-number">1.</span> <span class="nav-text">Mac环境下hexo + Github Pages搭建个人博客超级小白指南</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#系统环境配置"><span class="nav-number">1.0.1.</span> <span class="nav-text">系统环境配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Node-js"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Git"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Hexo"><span class="nav-number">1.0.1.3.</span> <span class="nav-text">安装Hexo</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hexo主题配置"><span class="nav-number">1.0.2.</span> <span class="nav-text">Hexo主题配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装主题"><span class="nav-number">1.0.2.1.</span> <span class="nav-text">安装主题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#启用主题"><span class="nav-number">1.0.2.2.</span> <span class="nav-text">启用主题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#更新主题"><span class="nav-number">1.0.2.3.</span> <span class="nav-text">更新主题</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Github-Pages配置"><span class="nav-number">1.0.3.</span> <span class="nav-text">Github Pages配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是Github-Pages"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">什么是Github Pages</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#创建Github-Pages"><span class="nav-number">1.0.3.2.</span> <span class="nav-text">创建Github Pages</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署Hexo到Github-Pages"><span class="nav-number">1.0.4.</span> <span class="nav-text">部署Hexo到Github Pages</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#使用hexo-deploy部署"><span class="nav-number">1.0.4.1.</span> <span class="nav-text">使用hexo deploy部署</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#博客配置及主题优化"><span class="nav-number">1.0.5.</span> <span class="nav-text">博客配置及主题优化</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#博客信息配置"><span class="nav-number">1.0.5.1.</span> <span class="nav-text">博客信息配置</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xiaolong</span>
+</div>
+
+
+<div class="powered-by">
+  Powered by <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
